@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inst0100"
+version = "0.1.0"
+description = "UCL DIS module code for INST0100"
+dependencies = [
+    "numpy", 
+    "pandas",
+    "matplotlib"
+]
+
+[tool.setuptools]
+packages = ["inst0100"]
