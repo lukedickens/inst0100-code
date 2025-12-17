@@ -13,4 +13,5 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["inst0100"]
+# This tells setuptools to look for any folder with an __init__.py
+packages = { find = { where = ["."], include = ["inst0100*"] } }
